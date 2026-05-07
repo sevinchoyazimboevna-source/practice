@@ -40,3 +40,15 @@ result3 = give_greet("Angel", 19)
 print("result3:", result3)
 
 
+print("============SCOPE=======")
+b = 100
+
+#DEFINE
+def calculate(a, b): #2
+    c = a * b #1
+    print(f"value: {c}")
+
+
+#CALL
+calculate(7,77)
+
