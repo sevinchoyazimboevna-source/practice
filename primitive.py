@@ -31,3 +31,20 @@ print(f"result4: {result}")
 
 print("===========BOOLEAN===========")
 
+#FUNCTIONS > type() input() bool() int() str() 
+
+y = input("Give your value")
+print("y", y)
+
+result = y.isnumeric()
+print(f"input is number: {result}")
+
+#TRUTHY VS FALSY VALUE
+#TRUTHY : TRUE 100 -100 MIT
+#FALSY: FALSE 0 "" NONE
+
+test_falsy = "" or False or None or 0
+print("The:", bool(test_falsy))
+
+test_truthy = "MIT"
+print("Thet:", bool(test_truthy))
