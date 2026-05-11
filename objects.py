@@ -21,11 +21,47 @@ print(type(array))
 print(type(math))
 
 
- 
 result1 = math.ceil(97.7) #call
 print("result1: ", result1)
 
 result2 = ceil(99.9)
 print("result2: ", result2)
 
+print("==========ERROR HANDING SYSTEM===========")
+car_dict = dict(name="PORSCHE", year=911, electric=False) 
 
+# try:
+#     print("passed here")
+#     result = car_dict("origin")
+#     print("result", result)
+# except KeyError as err:
+#     print("No origin state property found", err)
+# else:
+#     print("Executed successfully without errors!")
+# finally:
+#     print("Final closing logic")
+
+# try:
+#     print("passed here")
+#     result = car_dict("year")
+#     print("result", result)
+# except KeyError as err:
+#     print("No origin state property found", err)
+# else:
+#     print("Executed successfully without errors!")
+# finally:
+#     print("Final closing logic")
+
+try:
+    print("passed here")
+    a = car_dict.speed
+    result = car_dict("year")
+    print("result", result)
+except KeyError as err:
+    print("No origin state property found", err)
+except AttributeError as err:
+    print("No origin speed property found", err)
+else:
+    print("Executed successfully without errors!")
+finally:
+    print("Final closing logic")
