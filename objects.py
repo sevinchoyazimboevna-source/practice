@@ -52,15 +52,39 @@ car_dict = dict(name="PORSCHE", year=911, electric=False)
 # finally:
 #     print("Final closing logic")
 
+# try:
+#     print("passed here")
+#     a = car_dict.speed
+#     result = car_dict("year")
+#     print("result", result)
+# except KeyError as err:
+#     print("No origin state property found", err)
+# except AttributeError as err:
+#     print("No origin speed property found", err)
+# else:
+#     print("Executed successfully without errors!")
+# finally:
+#     print("Final closing logic")
+
+# try:
+#     print("passed here")
+#     # a = car_dict.speed
+#     result = car_dict("origin")
+#     print("result", result)
+# except (KeyError, AttributeError) as err:
+#     print("error:", err)
+# else:
+#     print("Executed successfully without errors!")
+# finally:
+#     print("Final closing logic")
+
 try:
     print("passed here")
-    a = car_dict.speed
-    result = car_dict("year")
+    # a = car_dict.speed
+    result = car_dict("origin")
     print("result", result)
-except KeyError as err:
-    print("No origin state property found", err)
-except AttributeError as err:
-    print("No origin speed property found", err)
+except Exception as err:
+    print("General error:", err)
 else:
     print("Executed successfully without errors!")
 finally:
