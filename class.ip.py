@@ -11,7 +11,7 @@ class Animal:
         self.voice = voice
 
     def make_voice(self):
-        print("the animal can make voice: {self.voice}")
+        print(f"the animal can make voice: {self.voice}")
 
 
 class Dog(Animal):
@@ -79,3 +79,22 @@ print(Cat.description)
 print("+++++++++++++++++++")
 print(dog.voice, fish.voice)
 print("status", cat._status)
+
+
+
+print("+++++++++++Polymorphism++++++++++++")
+dog.make_voice()
+fish.make_voice()
+
+print("++++================")
+# fish > Fish > Animal > object
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+result = a and b and c
+print(f"the result : {a}")
+
+# Fish > Animal > object
+data = issubclass(Fish, Animal)
+data2 = issubclass(Animal, object)
+print("data:", data, data2)
