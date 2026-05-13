@@ -37,3 +37,52 @@ print("c", c is e)
 #is reference uchun
 
 
+print("=============CONDITIONS================")  #truthy vs falsy
+x = 50
+
+if x > 50:
+    print("case A")
+elif x > 10:
+    print("case B")
+else:
+    print("case C")
+
+print("=============Logical operator================")
+
+age = 20
+# person = None
+
+# if age > 18:
+#     print("adult")
+# else:
+#     print("child")
+# print("person", person)
+
+#Ternary
+person = "adult" if age > 17 else "minor"
+print(person)
+
+print("++++++++++++++++++++")
+
+is_student = True
+is_admin = False
+is_guest = True
+is_parent = True
+
+
+if  is_student:
+    print("executed")
+
+if  not is_student:
+    print("welcomeee")
+elif is_admin:
+    print("Please go to this office!")
+elif is_guest:
+    print("Welcome home and be quite and dont touch my personal things and my toys just seat and eat")
+
+# "or" da bir true bolsa true ni oladi agar "and" bolsa bitsa false bolsa falsni aladi
+
+
+
+
+
