@@ -49,3 +49,15 @@ print("+++++++++++++++++++++++++")
 calculate(0, 7, 3, 19)
 print("++++++++++++++++++++")
 calculate(5, 7)
+
+
+#**kwargs > dictionary orqali qurilgan
+def introduce(**kwargs):
+ print(f"type: {type(kwargs)}")
+ print(f" Hi im {kwargs["name"]} and im {kwargs["age"]} years old")
+ pass
+
+#call
+introduce(name="Angel", age=19)
+introduce(name="Javanna", age=20, single=True)
+ 
