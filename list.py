@@ -84,3 +84,24 @@ print("reverse:", gena) #balandan pasga
 numbs = [2, 17, 27, 39, 7]
 new_numbs = sorted(numbs)
 print(f"numbs: {numbs} and {new_numbs}")
+
+print("============LAMBDA FUNCTION=============")
+#anonymos function
+def calculate(x, y): return x * y
+
+result = calculate(3, 5)
+print("result:", result)
+
+people = [
+    ("Angel", 19),
+    ("Javanna", 20),
+    ("Joseph", 29),
+    ("Dalva", 50)
+]
+people.sort()
+print("peopel:", people)
+
+#sort by age via lambda
+people.sort(key=lambda person: person[1])
+print("peopel2:", people)
+
