@@ -105,3 +105,44 @@ print("peopel:", people)
 people.sort(key=lambda person: person[1])
 print("peopel2:", people)
 
+print("++++++++++++++ENUMERATE, MAP AND FILTER++++++++++++++++")
+#enumerate for index and value
+
+animals = ("dog", "cat") #list
+for element in enumerate(animals):
+    print("element", element)
+
+for (index, value) in enumerate(animals):
+    print(f"index: {index} and value {value}")
+
+#similar in dictionary
+car_obj = dict(brand="porsche", year=2027)
+result = car_obj.get("brand")
+print(result)
+
+car_obj = dict(brand="porsche", year=2027)
+result = car_obj.items()
+for (key, value) in result:
+    print(f"key: {key} value{value}")
+
+print("_______________________")
+#map
+cars = [
+    ("PORSCHE", 92),
+    ("AUDI", 34)
+]
+new_cars = []
+for car in cars:
+    new_cars.append(car[0])
+    print("new_cars: ", new_cars)
+
+result1_map = map(lambda car: car[0], cars)
+print(f"result1: {result1_map} and type {type(result1_map)}")
+new_cars = list(result1_map)
+print("newcar:", new_cars)
+
+print("_________________________")
+#filter
+result_filter = filter(lambda car: car[1] > 80, cars)
+print(f"result {result_filter} and type {type(result_filter)}")
+print(list(result_filter))
