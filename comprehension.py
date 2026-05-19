@@ -30,7 +30,7 @@ print(id(numbers), id(list_numbers))
 
 print("===========================")
 
-people = [("ANGEL",20), ("KEUN PARK", 37)]
+people = [("ANGEL",20), ("KEUN PARK", 37), ("ABDU", 14), ("DINA", 19)]
 list_people = [person[0] for person in people] #b version
 
 print(list_people)
@@ -48,3 +48,20 @@ cars = [
 
 list_cars = [car[0] for car in cars if car[1] > 70] #c version
 print(list_cars)
+
+
+print("==========SET AND DICTIONARY COMP===========") 
+
+numbs = [1,5,7,17,7,5,2,3,7]
+set_numbs = {*numbs} #muhurlash
+print(set_numbs)
+
+print("+====================")
+
+dict_people = {person[0]: person[1] for person in people} #coprehencion usulu 
+print(dict_people)
+
+print("=======================")
+
+dict_people = {person[0]: person[1] for person in people if person[1] > 19} #coprehencion usulu 
+print(dict_people)
