@@ -30,3 +30,13 @@ git pull origin master
 -Array
 -Comprehension
 -Debugging
+
+
+## PIP COMMANDS:
+```
+pip list
+pip install
+pip uninstall pillow
+pip show pillow
+pip freeze > requirements.txt
+```
